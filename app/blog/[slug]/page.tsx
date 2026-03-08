@@ -58,7 +58,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
     }
     if (block.type === 'image' && currentH2Index !== -1) {
       if (!imageQueue[currentH2Index]) imageQueue[currentH2Index] = [];
-      imageQueue[currentH2Index].push({ src: block.src, alt: block.alt });
+      imageQueue[currentH2Index].push({ src: block.src || '', alt: block.alt || '' });
     }
   }
 
