@@ -45,10 +45,10 @@ export default function BlogIndexPage() {
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
             <p className="text-[10px] font-bold uppercase tracking-widest text-brand-400 mb-3">Expert Advice</p>
             <h1 className="text-3xl md:text-5xl font-display font-bold text-white max-w-3xl leading-tight mb-4">
-              LOCATION_DISPLAY Advice: Costs, Planning, Materials, and Maintenance
+              London Advice: Costs, Planning, Materials, and Maintenance
             </h1>
             <p className="text-brand-100 text-sm md:text-base max-w-xl">
-              BLOG_INDEX_SUBTITLE_GOES_HERE. Practical guides for LOCATION_DISPLAY homeowners.
+              Expert advice on roofers for London homeowners. Practical guides for London homeowners.
             </p>
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function BlogIndexPage() {
                 <div className="flex-1">
                   <p className="text-[10px] font-bold uppercase tracking-widest text-brand-400 mb-2">Free Service</p>
                   <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-2">
-                    Looking for LOCATION_DISPLAY Quotes?
+                    Looking for London Quotes?
                   </h3>
                   <p className="text-brand-200 text-sm">
                     Up to three vetted specialists, each offering a free survey and a written quote. No cost, no obligation.

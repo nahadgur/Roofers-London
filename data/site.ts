@@ -5,7 +5,6 @@ export const siteConfig = {
   "url": "https://www.rooferslondon.co.uk",
   "description": "Connect with vetted roofers across London's 33 boroughs. From Victorian terraces in Kensington to Georgian houses in Bloomsbury, we match you with specialists who understand London's unique roofing challenges, conservation area requirements, and listed building regulations."
 };
-
 export const TESTIMONIALS = [
   {
     "id": "testimonial-1",
@@ -48,7 +47,6 @@ export const TESTIMONIALS = [
     "text": "Chimney stack pointing work on our Edwardian house in Greenwich needed specialist lime mortar due to conservation area status. The roofer understood the specific requirements and completed the work to heritage standards within budget."
   }
 ];
-
 export const TRUST_BADGES = [
   {
     "icon": "ShieldCheck",
@@ -71,7 +69,6 @@ export const TRUST_BADGES = [
     "description": "All quotes reflect realistic London costs including zone-based pricing, high labour rates, and material transport charges."
   }
 ];
-
 export const FAQS_HOME = [
   {
     "question": "How does the matching service work in London?",
@@ -86,7 +83,6 @@ export const FAQS_HOME = [
     "answer": "London roofers must navigate complex planning regulations, work with heritage materials, and understand conservation area restrictions. They also need congestion charge zone access, experience with Georgian and Victorian properties, and knowledge of Article 4 directions that affect many central London areas."
   }
 ];
-
 export const FAQS_SERVICES = [
   {
     "question": "What roof types are common in London properties?",
@@ -105,7 +101,6 @@ export const FAQS_SERVICES = [
     "answer": "Specialist roofers in our network have experience with Grade I, II*, and II listed buildings across London. They understand Listed Building Consent requirements and work with conservation officers. These projects require traditional materials like lead, lime mortar, and period-appropriate tiles or slate."
   }
 ];
-
 export const FAQS_LOCATION = [
   {
     "question": "How do you vet roofers for London's specific requirements?",
@@ -120,6 +115,31 @@ export const FAQS_LOCATION = [
     "answer": "We maintain a network of emergency roofers covering all London areas 24/7. They understand urgent access requirements, can work within noise restrictions in residential areas, and carry materials suitable for temporary weather protection while permanent repairs are planned."
   }
 ];
-
 export const testimonials = TESTIMONIALS;
 export const trustBadges = TRUST_BADGES;
+export const BLOG_SIDEBAR_SERVICE_LINKS = [
+  {
+    "label": "Roof Replacement in Bloomsbury",
+    "href": "/services/roof-replacement/bloomsbury/"
+  },
+  {
+    "label": "Flat Roofing in Covent Garden",
+    "href": "/services/flat-roofing/covent-garden/"
+  },
+  {
+    "label": "Roof Repair in Fitzrovia",
+    "href": "/services/roof-repair/fitzrovia/"
+  },
+  {
+    "label": "Fascias, Soffits and Guttering in Holborn",
+    "href": "/services/fascias-soffits-guttering/holborn/"
+  },
+  {
+    "label": "Chimney Repair in King's Cross",
+    "href": "/services/chimney-repair/king-s-cross/"
+  },
+  {
+    "label": "Roof Cleaning and Coating in Marylebone",
+    "href": "/services/roof-cleaning-coating/marylebone/"
+  }
+];

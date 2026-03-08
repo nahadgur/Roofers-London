@@ -32,8 +32,8 @@ export default function LocationIndexPage() {
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main className="flex-grow">
         <Hero
-          title="Installers by LOCATION_DISPLAY Location"
-          subtitle="LOCATIONS_INDEX_SUBTITLE_GOES_HERE. Search for your area and see which specialists cover it."
+          title="Installers by London Location"
+          subtitle="We cover 75 areas across London. Search for your area and see which specialists cover it."
           image="/images/gates/herts-overhead-iron-gates-gravel-circle-topiary.png"
           onOpenModal={() => setIsModalOpen(true)}
         />

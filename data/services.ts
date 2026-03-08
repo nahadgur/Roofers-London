@@ -1,10 +1,6 @@
 // data/services.ts - Auto-generated
 export interface FAQ { question: string; answer: string; }
-export interface Service {
-  id: string; title: string; slug: string; description: string;
-  image: string; icon: string; color: string; faqs: FAQ[];
-}
-
+export interface Service { id: string; title: string; slug: string; description: string; image: string; icon: string; color: string; faqs: FAQ[]; }
 export const services: Service[] = [
   {
     "id": "roof-replacement",
@@ -24,7 +20,10 @@ export const services: Service[] = [
         "question": "What roof materials work best for London's climate and regulations?",
         "answer": "Welsh slate performs excellently in London's wet climate and meets conservation requirements. Modern clay tiles suit Victorian properties, while concrete tiles work for post-war housing. Listed buildings often require handmade materials, while conservation areas may restrict colour choices to maintain streetscape character."
       }
-    ]
+    ],
+    "image": "/images/placeholder.png",
+    "icon": "Shield",
+    "color": "brand"
   },
   {
     "id": "flat-roofing",
@@ -44,7 +43,10 @@ export const services: Service[] = [
         "question": "Why do flat roofs fail more quickly in London?",
         "answer": "London's pollution accelerates membrane degradation, while thermal cycling from urban heat island effects causes expansion and contraction. Heavy rainfall overwhelms inadequate drainage, and foot traffic from maintenance access is common. Professional installation with proper falls and drainage is essential for longevity."
       }
-    ]
+    ],
+    "image": "/images/placeholder.png",
+    "icon": "Shield",
+    "color": "brand"
   },
   {
     "id": "roof-repair",
@@ -64,7 +66,10 @@ export const services: Service[] = [
         "question": "How much do typical roof repairs cost in London?",
         "answer": "Minor tile repairs start from £150-300, while chimney repointing costs £800-1500 depending on height and access. Lead work repairs range from £400-1200 per section. Zone 1 properties cost 20-30% more due to congestion charges and parking restrictions affecting labour costs."
       }
-    ]
+    ],
+    "image": "/images/placeholder.png",
+    "icon": "Shield",
+    "color": "brand"
   },
   {
     "id": "fascias-soffits-guttering",
@@ -84,7 +89,10 @@ export const services: Service[] = [
         "question": "Why do fascias and soffits deteriorate quickly in London?",
         "answer": "London's pollution and high humidity accelerate timber decay, while thermal cycling from urban heat effects causes paint failure. Victorian properties often have undersized guttering that overflows, causing fascia rot. Modern uPVC systems eliminate maintenance but may not suit conservation area requirements."
       }
-    ]
+    ],
+    "image": "/images/placeholder.png",
+    "icon": "Shield",
+    "color": "brand"
   },
   {
     "id": "chimney-repair",
@@ -104,7 +112,10 @@ export const services: Service[] = [
         "question": "How much does chimney repair cost in London?",
         "answer": "Repointing costs £800-1500 per stack depending on height and access difficulty. Full rebuilds range from £2000-5000 for standard Victorian chimneys. Listed building work costs 30-50% more due to specialist materials like lime mortar and handmade bricks. Access equipment adds significantly to costs in narrow London streets."
       }
-    ]
+    ],
+    "image": "/images/placeholder.png",
+    "icon": "Shield",
+    "color": "brand"
   },
   {
     "id": "roof-cleaning-coating",
@@ -124,9 +135,11 @@ export const services: Service[] = [
         "question": "Do roof coatings provide long-term benefits in London's climate?",
         "answer": "Quality roof coatings extend tile life by 10-15 years while improving weather resistance against London's frequent rain. They provide additional protection against pollution damage and can improve thermal performance. However, conservation areas may restrict coating colours, and listed buildings often require traditional uncoated finishes."
       }
-    ]
+    ],
+    "image": "/images/placeholder.png",
+    "icon": "Shield",
+    "color": "brand"
   }
 ];
-
 export const getAllServiceSlugs = (): string[] => services.map(s => s.slug);
 export const getServiceBySlug = (slug: string): Service | undefined => services.find(s => s.slug === slug);

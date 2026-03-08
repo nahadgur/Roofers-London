@@ -30,7 +30,7 @@ export function Header({ onOpenModal }: HeaderProps) {
       <div className="bg-brand-900 text-brand-50 py-2 px-4 text-sm hidden md:block">
         <div className="container-width flex justify-between items-center">
           <span className="flex items-center gap-2">
-            <MapPin className="w-4 h-4" /> NICHE_DISPLAY Specialists Covering All of LOCATION_DISPLAY
+            <MapPin className="w-4 h-4" /> Roofers Specialists Covering All of London
           </span>
         </div>
       </div>
@@ -42,10 +42,10 @@ export function Header({ onOpenModal }: HeaderProps) {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2.5 group">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt="NICHE_DISPLAY LOCATION_DISPLAY" className="h-10 w-auto" />
+              <img src="/logo.png" alt="Roofers London" className="h-10 w-auto" />
               <div className="flex flex-col">
-                <span className="font-display font-bold text-xl leading-none text-gray-900">NICHE_DISPLAY</span>
-                <span className="text-xs text-brand-500 font-semibold tracking-widest uppercase">LOCATION_DISPLAY</span>
+                <span className="font-display font-bold text-xl leading-none text-gray-900">Roofers</span>
+                <span className="text-xs text-brand-500 font-semibold tracking-widest uppercase">London</span>
               </div>
             </Link>
 

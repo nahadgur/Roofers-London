@@ -24,8 +24,8 @@ function BlogCtaBanner({ onOpenModal }: { onOpenModal: () => void }) {
         </div>
         <div className="flex-1 text-center md:text-left">
           <p className="text-[10px] font-bold uppercase tracking-widest text-brand-400 mb-1">No Cost, No Obligation</p>
-          <h3 className="text-lg md:text-xl font-bold text-white leading-snug mb-1">Need quotes for your LOCATION_DISPLAY property?</h3>
-          <p className="text-brand-200 text-sm">Submit your details and we connect you with up to three screened LOCATION_DISPLAY installers. Completely free.</p>
+          <h3 className="text-lg md:text-xl font-bold text-white leading-snug mb-1">Need quotes for your London property?</h3>
+          <p className="text-brand-200 text-sm">Submit your details and we connect you with up to three screened London installers. Completely free.</p>
         </div>
         <div className="flex-shrink-0">
           <button
@@ -272,7 +272,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
 
                 {/* CTA */}
                 <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                  <h3 className="text-lg font-display font-bold text-gray-900 mb-3">Find vetted LOCATION_DISPLAY specialists</h3>
+                  <h3 className="text-lg font-display font-bold text-gray-900 mb-3">Find vetted London specialists</h3>
                   <p className="text-gray-500 text-sm mb-5">Free site surveys, written quotes from up to 3 matched installers, zero fees.</p>
                   <button onClick={() => setIsModalOpen(true)} className="block w-full btn-primary text-center">
                     Find Installers

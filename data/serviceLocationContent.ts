@@ -1,134 +1,126 @@
-// data/serviceLocationContent.ts - TEMPLATE: Replace placeholder content for each site
-// Functions receive the city name to generate city-specific content
-
+// data/serviceLocationContent.ts - Auto-generated
 export const serviceLocationContent: Record<string, {
-  intro: (city: string) => string[];
-  steps: (city: string) => string[];
-  whyPoints: (city: string) => string[];
+  intro: (city: string) => string[]; steps: (city: string) => string[]; whyPoints: (city: string) => string[];
 }> = {
-  'electric-sliding': {
+  'roof-replacement': {
     intro: (city) => [
-      `Sliding gate projects in ${city} typically start with a physical constraint that rules out swing gates. A short approach, a gradient issue, or an opening width that makes swing leaves impractical. A sliding gate resolves these by travelling along the boundary rather than sweeping through an arc.`,
-      `Ground-track and cantilever are the two configurations installed across LOCATION_DISPLAY. Ground-track is standard on level sites. Cantilever systems suspend the gate above the surface for sloped or sensitive surfaces. Your installer confirms which suits the ${city} site at the survey.`,
+      `Roof replacement in \${city} requires understanding of local planning policies, conservation area restrictions, and the specific challenges of London's urban environment. Our network includes specialists familiar with \${city}'s particular requirements, from heritage compliance to modern performance standards.`,
+      `The cost of roof replacement in \${city} reflects London's premium labour market and material logistics, with projects typically requiring coordination of congestion zone access, parking permits, and neighbour notifications under Party Wall Act procedures common in London's dense housing areas.`
     ],
     steps: (city) => [
-      `Submit your ${city} postcode, approximate opening width, and available boundary space. We identify up to three sliding gate specialists covering ${city}.`,
-      `Each installer arranges a free site visit to measure the opening, assess run-back, check gradient, and confirm the right track configuration.`,
-      `You receive a written quote covering gate fabrication, track or cantilever foundation, motor, photocells, and any access control.`,
-      `If bespoke gates are being fabricated, workshop lead time is typically 2 to 4 weeks from confirmed order.`,
-      `On installation day, the track foundation is excavated and poured, and conduit is laid for motor and intercom cabling.`,
-      `Track is set and levelled, gate hung and adjusted, motor and rack fitted, and photocells wired to BS EN 12453.`,
-      `System commissioned. Travel limits calibrated, remotes programmed, app access configured, manual release demonstrated.`,
+      `Initial consultation assesses your \${city} property's specific requirements, including conservation area implications and material restrictions that may affect specification choices`,
+      `Detailed survey identifies structural condition, insulation requirements, and planning constraints specific to your local area within London's regulatory framework`,
+      `Material specification considers heritage requirements, environmental performance needs, and compliance with Building Regulations enhanced by London-specific safety requirements`,
+      `Planning assessment determines whether council approval is needed, with expertise in local borough policies and conservation area restrictions affecting your area`,
+      `Installation coordination includes logistics planning for London conditions, scaffold licensing, and parking permit arrangements necessary for central London access`,
+      `Quality assurance ensures all work meets Building Control standards and manufacturer warranty requirements, with documentation supporting insurance and property valuation needs`,
+      `Project completion includes final inspection, certification, and handover documentation with maintenance guidance specific to London environmental conditions`
     ],
     whyPoints: (city) => [
-      `Sliding gate specialists covering ${city} have hands-on experience with the terrain and property types across this part of LOCATION_DISPLAY.`,
-      `Every installation commissioned to BS EN 12453 with safety testing documented at handover.`,
-      `Free site survey and itemised written quote from each ${city} installer before any commitment.`,
-      `FAAC, BFT, CAME, and Nice motor systems stocked with established parts networks for long-term maintenance.`,
+      `Local expertise in \${city}'s planning requirements, conservation policies, and heritage building regulations affecting roof replacement specifications and approval processes`,
+      `Understanding of London's premium material supply chains, with access to Welsh slate, reclaimed clay tiles, and other heritage-appropriate materials required for period properties`,
+      `Experience with London's unique logistical challenges including congestion zone operations, parking restrictions, and coordination requirements for dense urban residential areas`,
+      `Knowledge of insurance requirements and documentation standards expected by London property insurers for high-value residential and commercial properties`
     ],
-  },
-  'electric-swing': {
+  },  'flat-roofing': {
     intro: (city) => [
-      `Swing gates are the most widely installed format on detached properties in ${city}. Paired leaves opening from a central point deliver a visual presence that other formats do not match. The motor technology is mature, the range of materials is broad, and the installer population is substantial.`,
-      `Motor type defines the entrance aesthetic. Underground motors, concealed below the post, are the standard specification on premium ${city} properties. Ram-arm motors mount on the rear face and are the practical choice on retrofits where post foundations prevent excavation. The installer assesses which fits your post condition and gate weight at the survey.`,
+      `Flat roofing solutions in \${city} must meet London's enhanced fire safety requirements while addressing the specific performance challenges of urban environments. Our specialists understand local planning policies and building standards affecting flat roof installations across London's diverse property types.`,
+      `Modern flat roofing in \${city} involves complex membrane systems designed for London's environmental conditions, with specifications accounting for pollution resistance, thermal cycling, and the drainage challenges common in dense urban developments.`
     ],
     steps: (city) => [
-      `Provide your ${city} details with gate type, opening width, and budget. We match you with up to three swing gate specialists.`,
-      `Each installer visits, measures the opening, walks the full swing arc, checks pillar condition, and recommends motor type.`,
-      `Written quotes cover gate fabrication, post foundations, motor, safety sensors, and access control.`,
-      `Where new gates are being fabricated, allow 2 to 5 weeks for manufacture.`,
-      `On site, post foundations are set, underground chambers excavated where specified, and conduit installed.`,
-      `Gates hung and aligned, motors fitted, photocells positioned for full coverage, all wiring completed.`,
-      `System programmed and tested to BS EN 12453. Limits set, devices paired, manual release demonstrated, commissioning record provided.`,
+      `Property assessment in \${city} evaluates existing structure, drainage requirements, and any planning constraints affecting flat roof installation or replacement`,
+      `System design considers London's specific environmental challenges including wind loading, thermal stress, and drainage capacity for increased rainfall intensity`,
+      `Material selection focuses on membranes with proven performance in urban conditions, fire safety compliance, and long-term durability expectations`,
+      `Planning compliance review ensures proposed work meets local borough requirements and any conservation area restrictions affecting your property`,
+      `Installation management coordinates London logistics including access arrangements, weather protection, and compliance with building control inspection requirements`,
+      `Waterproofing verification includes comprehensive testing to ensure system integrity and performance under London's variable weather conditions`,
+      `Certification and warranty documentation provides long-term protection with guarantees appropriate for London's urban environmental stresses`
     ],
     whyPoints: (city) => [
-      `Swing gate installers covering ${city} understand the property types, driveway geometries, and planning context across this part of LOCATION_DISPLAY.`,
-      `Underground and surface motor options with honest guidance on which suits your situation.`,
-      `BS EN 12453 commissioning documented on every installation.`,
-      `Separate written warranties for gate and automation from every ${city} installer in our network.`,
+      `Expertise in \${city}'s building regulations and fire safety requirements affecting flat roofing specifications, particularly important following enhanced London safety standards`,
+      `Access to high-performance membrane systems and installation techniques proven effective in London's challenging urban environment with pollution and thermal stress`,
+      `Understanding of local drainage requirements and building control processes, ensuring installations meet London standards for storm water management`,
+      `Coordination experience with London's planning framework, including party wall procedures and neighbour consultation requirements common in dense residential areas`
     ],
-  },
-  'wooden-gates': {
+  },  'roof-repair': {
     intro: (city) => [
-      `Hardwood gates are a natural choice for many ${city} properties. Conservation areas, Green Belt, and the stock of period houses across LOCATION_DISPLAY all create contexts where timber is the material that sits most naturally. Where planning officers are involved, hardwood is typically the specification that generates least resistance.`,
-      `Fabrication is bespoke for the majority of timber gate projects in ${city}. Iroko is the default for most installations. European oak is chosen where the grain character is the design feature. Accoya, with its 50-year guarantee, is the specification where low maintenance is the firm priority.`,
+      `Roof repairs in \${city} address both emergency weatherproofing needs and long-term maintenance requirements specific to London's challenging urban environment. Our network provides rapid response services with understanding of local insurance requirements and heritage constraints.`,
+      `Emergency roof repairs in \${city} require specialists who understand London's logistics challenges, from congestion zone access to parking restrictions that can delay response times during critical weather protection situations.`
     ],
     steps: (city) => [
-      `Submit your enquiry and we match you with hardwood gate specialists covering ${city} who have bespoke timber experience in this part of LOCATION_DISPLAY.`,
-      `Your installer visits, discusses the design brief, shows timber samples, confirms automation needs, and measures the entrance.`,
-      `Fabrication drawings produced for approval. No timber ordered until the design is confirmed.`,
-      `Gates made in the workshop. Allow 3 to 5 weeks from confirmed order.`,
-      `Gates hung on galvanised or stainless ironmongery and the initial treatment coat applied on site.`,
-      `Automation fitted and commissioned to BS EN 12453 if included.`,
-      `Written maintenance schedule for the specified timber species handed over at completion.`,
+      `Emergency assessment in \${city} identifies immediate weatherproofing needs and safety hazards, with rapid response capabilities across all London zones`,
+      `Damage documentation includes comprehensive photography and reports meeting insurance company requirements for London property claims`,
+      `Temporary weatherproofing provides immediate protection using methods appropriate for your property type and local environmental conditions`,
+      `Permanent repair planning considers heritage restrictions, material availability, and conservation compliance requirements affecting your area`,
+      `Repair execution uses appropriate materials and techniques for London conditions, with expertise in both traditional and modern roofing systems`,
+      `Quality testing ensures repairs provide long-term weatherproofing effectiveness under London's variable climate and environmental stresses`,
+      `Warranty documentation provides peace of mind with guarantees covering both materials and workmanship appropriate for urban conditions`
     ],
     whyPoints: (city) => [
-      `Timber specialists covering ${city} understand the local planning context and advise on the right specification.`,
-      `Iroko, European oak, and Accoya all available with clear guidance on which suits your needs.`,
-      `Free site survey and approval drawings before any ${city} installer begins work.`,
-      `FSC-certified timber available from every fabricator in our network on request.`,
+      `Rapid response capability across \${city} with understanding of London access restrictions and emergency weatherproofing requirements for property protection`,
+      `Insurance industry relationships and documentation standards meeting requirements of London property insurers for both residential and commercial claims`,
+      `Expertise in heritage repair methods required for London's extensive stock of period properties, with conservation-compliant materials and traditional techniques`,
+      `Understanding of London environmental stresses affecting roof performance, with repair solutions designed for long-term durability in urban conditions`
     ],
-  },
-  'metal-gates': {
+  },  'fascias-soffits-guttering': {
     intro: (city) => [
-      `Metal gate work in ${city} ranges from bespoke wrought iron entrance treatments on established properties to contemporary aluminium sliding gates on modern builds. The specification decision that separates lasting installations from those needing attention within five years is the surface treatment: hot-dip galvanising before powder coating on every steel and iron gate, without exception.`,
-      `For ${city} properties on heavy clay soils, post foundation specification takes on particular importance. Clay swells with winter moisture and shrinks in dry summers, which can move posts and misalign gates. Installers in our ${city} network specify foundation depth and reinforcement for the actual soil type at your property.`,
+      `Fascia, soffit, and guttering services in \${city} address the specific challenges of London's urban environment, where pollution accelerates material degradation and increased rainfall intensity requires high-capacity drainage systems. Our specialists understand local planning restrictions and heritage requirements affecting external alterations.`,
+      `Guttering replacement in \${city} must account for London's increasing storm frequency and the drainage challenges created by surrounding urban development affecting natural water flow patterns.`
     ],
     steps: (city) => [
-      `Submit your ${city} enquiry and we match you with metal gate fabricators covering your area and material preference.`,
-      `Your installer visits, reviews examples, discusses design, material, colour, and automation, and measures the opening.`,
-      `CAD drawings produced for approval. 3D renders available on complex projects.`,
-      `Gate fabricated, shot-blasted, hot-dip galvanised, and powder-coated. Allow 3 to 6 weeks from drawing sign-off.`,
-      `Gate hung on new or existing posts, with foundations assessed and upgraded where needed.`,
-      `Automation and access control installed, wired, and fully tested.`,
-      `Written handover covers gate warranty, automation warranty, and finish maintenance guidance.`,
+      `System assessment in \${city} evaluates current drainage capacity, structural condition, and any conservation area restrictions affecting material choices and installation methods`,
+      `Capacity calculations account for London rainfall data and urban runoff factors specific to your property's location and surrounding development density`,
+      `Material specification considers heritage requirements, environmental durability, and security factors relevant to your area's theft risk and insurance requirements`,
+      `Planning compliance ensures proposed work meets local borough policies and conservation area guidelines affecting external building alterations`,
+      `Installation coordination manages London logistics including scaffold requirements, parking permits, and access arrangements for contractor vehicles`,
+      `System testing verifies drainage performance and structural integrity, with particular attention to overflow provisions required for storm conditions`,
+      `Maintenance guidance provides long-term care instructions specific to London conditions including pollution effects and leaf litter management`
     ],
     whyPoints: (city) => [
-      `Metal gate specialists covering ${city} specify hot-dip galvanising before powder coating as standard on all steel and iron.`,
-      `CAD drawings approved before fabrication starts so you see exactly what is being made.`,
-      `Free site survey and design consultation with each ${city} specialist, no commitment until drawings and quote are approved.`,
-      `Separate gate and automation warranties provided in writing by every ${city} installer.`,
+      `Local knowledge of \${city}'s planning policies and conservation requirements affecting fascia, soffit, and guttering specifications on both heritage and modern properties`,
+      `Understanding of London's environmental challenges requiring high-capacity drainage systems and pollution-resistant materials for long-term performance`,
+      `Experience with London installation logistics including access restrictions, parking limitations, and coordination requirements in dense residential areas`,
+      `Expertise in heritage-appropriate materials and techniques required for period properties, with supplier relationships for cast iron restoration and traditional components`
     ],
-  },
-  'automated-systems': {
+  },  'chimney-repair': {
     intro: (city) => [
-      `Automation retrofits are among the highest-demand projects for installers covering ${city}. The brief is familiar: manual gates that are sound and suit the property, but the daily inconvenience of manual operation has become unacceptable. The retrofit adds motor and access control without replacing the gates.`,
-      `Access control often delivers the most practical value. Video intercom on a smartphone lets you manage the entrance from anywhere. Proximity readers open the gate as the car approaches. For ${city} homeowners with vehicle security concerns, a closed automated gate with recording and auto-close provides a real deterrent layer.`,
+      `Chimney repairs in \${city} combine heritage preservation with modern safety standards, addressing the structural and weatherproofing challenges affecting London's extensive stock of period properties. Our specialists understand conservation requirements and Party Wall Act procedures common in terraced housing areas.`,
+      `Structural chimney work in \${city} often involves complex coordination with neighbours and building control, particularly important given London's dense housing patterns and shared party wall structures.`
     ],
     steps: (city) => [
-      `Submit your ${city} enquiry. We match you with automation engineers who carry out retrofits regularly and stock the main motor brands.`,
-      `Your installer visits to assess gate weight, hinge condition, post alignment, and foundation depth, then recommends motor type.`,
-      `Motor and access control agreed in writing. Any structural work quoted and confirmed before automation equipment is ordered.`,
-      `Motors fitted, underground chambers excavated where specified, photocells and safety edges positioned, access control cabling completed.`,
-      `System commissioned to BS EN 12453 with force measurement, all access devices programmed and tested.`,
-      `Handover includes manual release demo, remote programming, app setup, and written declaration of conformity.`,
+      `Structural survey in \${city} identifies stability issues, movement patterns, and heritage constraints affecting repair methods and material choices`,
+      `Party wall assessment determines whether formal procedures are required, with coordination of neighbour notifications and surveyor appointments`,
+      `Heritage compliance review ensures proposed repairs meet conservation area requirements and listed building constraints affecting your property`,
+      `Repair specification uses traditional materials and techniques appropriate for London's period properties while meeting current safety standards`,
+      `Installation management coordinates scaffold requirements, access arrangements, and building control inspections throughout the repair process`,
+      `Structural verification ensures completed work meets safety standards and provides long-term stability under London's environmental conditions`,
+      `Documentation and certification includes building control approval, warranty information, and maintenance guidance for ongoing care`
     ],
     whyPoints: (city) => [
-      `Automation engineers covering ${city} complete a structural assessment before specifying any motor.`,
-      `FAAC, BFT, CAME, Nice, and Beninca available with established parts support in LOCATION_DISPLAY.`,
-      `BS EN 12453 compliance documented at handover on every ${city} project.`,
-      `Video intercom, proximity readers, keypads, and smart home integration available on any ${city} retrofit.`,
+      `Expertise in \${city}'s heritage building requirements with traditional repair techniques appropriate for Georgian, Victorian, and Edwardian properties`,
+      `Understanding of Party Wall Act procedures and neighbour coordination requirements common in London's terraced housing areas`,
+      `Access to traditional materials including handmade bricks, lime mortar, and period-appropriate components required for conservation-compliant repairs`,
+      `Experience with London building control processes and structural engineering coordination for complex chimney restoration projects`
     ],
-  },
-  'gate-repair': {
+  },  'roof-cleaning-coating': {
     intro: (city) => [
-      `Repair callouts in ${city} follow predictable patterns. Motor wear from poor lubrication. Board failure from moisture ingress. Photocell drift from frost or impact causing false stops. Hinge wear producing a dropping leaf the motor struggles to move. Most resolve in one visit when the engineer has the right parts.`,
-      `Motor brand matters for repair speed. FAAC, BFT, CAME, Nice, and Beninca all maintain UK parts supply for at least a decade after production ends. An engineer covering ${city} who stocks these brands resolves most faults first-visit. An obscure motor creates delays and higher costs. Annual servicing catches developing faults before they cause failures.`,
+      `Roof cleaning and coating services in \${city} address the accelerated contamination effects of London's urban environment, where traffic pollution and atmospheric deposits require specialist cleaning methods and protective treatments. Our services are tailored to both heritage conservation requirements and modern performance expectations.`,
+      `Professional roof cleaning in \${city} uses methods appropriate for London's diverse property types, from gentle heritage-safe techniques for period buildings to high-performance treatments for modern developments.`
     ],
     steps: (city) => [
-      `Submit your ${city} repair enquiry. We connect you with gate engineers who stock parts for FAAC, BFT, CAME, Nice, and Beninca.`,
-      `The engineer runs a structured diagnostic covering motor, board, sensors, drive, hinges, and gate structure.`,
-      `Written fault explanation and repair quote provided before any work begins.`,
-      `If the fault can be fixed from van stock, the repair is completed immediately and the system tested.`,
-      `Where a part must be ordered, the gate is secured manually and a return visit scheduled. Lead times typically 1 to 5 days.`,
-      `After repair, all systems tested: motor limits, sensors, battery, and access devices.`,
-      `Written service report covering work completed, parts used, and any future recommendations provided.`,
+      `Surface assessment in \${city} evaluates contamination levels, material condition, and any conservation restrictions affecting cleaning methods and chemical treatments`,
+      `Cleaning method selection considers property type, heritage constraints, and environmental regulations affecting chemical use near London's waterways`,
+      `Professional cleaning removes pollution deposits, algae growth, and atmospheric staining using techniques appropriate for your roof material`,
+      `Surface preparation addresses any minor damage and ensures optimal conditions for protective coating application`,
+      `Coating application uses high-quality systems designed for London's environmental conditions with UV protection and pollution resistance`,
+      `Quality verification ensures complete coverage and long-term performance expectations under urban environmental stresses`,
+      `Maintenance guidance provides ongoing care instructions specific to London conditions including recontamination prevention and performance monitoring`
     ],
     whyPoints: (city) => [
-      `Engineers covering ${city} target 24 to 48 hour attendance, same-day for gates stuck open.`,
-      `Written diagnosis and quote before any work starts on every ${city} callout.`,
-      `Van stock for FAAC, BFT, CAME, Nice, and Beninca. Majority of ${city} repairs completed first-visit.`,
-      `Annual service contracts available for scheduled maintenance.`,
+      `Understanding of \${city}'s environmental challenges requiring specialist cleaning techniques and protective coatings designed for urban pollution exposure`,
+      `Expertise in heritage-safe cleaning methods meeting conservation area requirements and listed building constraints affecting treatment options`,
+      `Knowledge of London environmental regulations and waterway protection requirements affecting chemical treatment selection and application methods`,
+      `Experience with property enhancement services important for London's competitive property market, where presentation significantly affects values and rental potential`
     ],
-  },
+  }
 };

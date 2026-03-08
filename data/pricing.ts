@@ -1,9 +1,5 @@
 // data/pricing.ts - Auto-generated
-export interface PricingTier {
-  treatment: string; slug: string; priceFrom: number; priceTo: number;
-  typicalDuration: string; alignerSets: string; description: string;
-}
-
+export interface PricingTier { treatment: string; slug: string; priceFrom: number; priceTo: number; typicalDuration: string; alignerSets: string; description: string; }
 export const pricingTiers: PricingTier[] = [
   {
     "treatment": "Complete Roof Replacement",
@@ -60,15 +56,24 @@ export const pricingTiers: PricingTier[] = [
     "description": "Pricing varies with roof size and contamination level from London's urban environment. Conservation areas may require gentler cleaning methods, increasing labour costs. Protective coatings add significant value but may not be suitable for listed buildings requiring traditional uncoated finishes."
   }
 ];
-
-export const financeInfo = {
-  available: true,
-  interestFree: true,
-  monthlyFrom: 99,
-  spreadOver: '6 to 36 months',
-  description: '0% finance available through selected installers. Subject to status.',
+export const servicePricingMap: Record<string, string[]> = {
+  'roof-replacement': ['roof-replacement'],
+  'flat-roofing': ['flat-roofing'],
+  'roof-repair': ['roof-repair'],
+  'fascias-soffits-guttering': ['fascias-soffits-guttering'],
+  'chimney-repair': ['chimney-repair'],
+  'roof-cleaning-coating': ['roof-cleaning-coating']
 };
-
 export function getPricingForService(serviceId: string): PricingTier[] {
-  return pricingTiers.filter(p => p.slug === serviceId);
+  const slugs = servicePricingMap[serviceId] || ['roof-replacement'];
+  return pricingTiers.filter(p => slugs.includes(p.slug));
 }
+export const treatmentIncludes = [
+  "All materials, scaffolding, waste removal, weatherproofing",
+  "EPDM or TPO membrane, insulation, drainage, waterproofing",
+  "Materials, temporary weatherproofing, emergency call-out",
+  "All materials, downpipes, brackets, old system removal",
+  "Repointing, flashing renewal, pot replacement, scaffolding",
+  "Pressure washing, moss treatment, protective coating application"
+];
+export const financeInfo = { available: true, interestFree: true, monthlyFrom: 99, spreadOver: '6 to 36 months', description: '0% finance available through selected installers. Subject to status.' };

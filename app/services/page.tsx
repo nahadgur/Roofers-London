@@ -19,8 +19,8 @@ export default function ServicesIndexPage() {
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main className="flex-grow">
         <Hero
-          title="LOCATION_DISPLAY Installation Services"
-          subtitle="Six categories of specialist gate work, each handled by installers who do that type of project as their primary trade. Select the service that matches your requirements and get connected with vetted LOCATION_DISPLAY professionals."
+          title="London Installation Services"
+          subtitle="Six categories of specialist gate work, each handled by installers who do that type of project as their primary trade. Select the service that matches your requirements and get connected with vetted London professionals."
           image="/images/gates/gate-aluminium-sliding-horizontal-modern-new-build.png"
           showCta={false}
           showTrust={false}
