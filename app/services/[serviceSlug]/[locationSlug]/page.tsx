@@ -18,7 +18,6 @@ import { PricingSection } from '@/components/PricingSection';
 import { NearbyAreasGrid } from '@/components/NearbyAreasGrid';
 import { siteConfig } from '@/data/site';
 import { serviceLocationContent } from '@/data/serviceLocationContent';
-import { serviceLocationContent } from '@/data/serviceLocationContent';
 
 
 export default function ServiceLocationPage({ params }: { params: { serviceSlug: string; locationSlug: string } }) {

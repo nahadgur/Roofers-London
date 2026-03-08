@@ -19,7 +19,6 @@ import { NearbyAreasGrid } from '@/components/NearbyAreasGrid';
 import { Testimonials } from '@/components/Testimonials';
 import { siteConfig } from '@/data/site';
 import { cityPageContent } from '@/data/cityContent';
-import { cityPageContent } from '@/data/cityContent';
 
 export default function CityPage({ params }: { params: { city: string } }) {
   const [isModalOpen, setIsModalOpen] = useState(false);

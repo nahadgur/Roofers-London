@@ -18,7 +18,6 @@ import { LeadFormModal } from '@/components/LeadFormModal';
 import { HeroLeadForm } from '@/components/HeroLeadForm';
 import { PricingSection } from '@/components/PricingSection';
 import { serviceContent } from '@/data/serviceContent';
-import { serviceContent } from '@/data/serviceContent';
 import { siteConfig } from '@/data/site';
 
 export default function ServicePage({ params }: { params: { serviceSlug: string } }) {
