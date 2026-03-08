@@ -67,7 +67,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
 
   return (
     <div className="prose prose-gray max-w-none">
-      {(block.items || []).map((item, j) => (
+      {blocks.map((block, i) => {
         // Skip image blocks, they render attached to their h2 instead
         if (block.type === 'image') return null;
         // Skip internal-link, external-link, cta data blocks
@@ -119,7 +119,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
           case 'list':
             elements.push(
               <ul key={i} className="my-6 pl-6 space-y-2">
-                {block.items.map((item, j) => (
+                {(block.items || []).map((item, j) => (
                   <li key={j} className="text-gray-600 leading-relaxed list-disc marker:text-brand-500">
                     {item}
                   </li>
@@ -364,4 +364,3 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
     </>
   );
 }
-
