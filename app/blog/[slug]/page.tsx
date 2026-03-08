@@ -67,7 +67,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
 
   return (
     <div className="prose prose-gray max-w-none">
-      {blocks.map((block, i) => {
+      {(block.items || []).map((item, j) => (
         // Skip image blocks, they render attached to their h2 instead
         if (block.type === 'image') return null;
         // Skip internal-link, external-link, cta data blocks
@@ -364,3 +364,4 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
     </>
   );
 }
+
