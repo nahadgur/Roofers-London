@@ -26,8 +26,8 @@ export default function CityPage({ params }: { params: { city: string } }) {
   if (!cityName) notFound();
 
   const cityFaqs = [...FAQS_LOCATION, ...FAQS_SERVICES];
-  const whyCards = cityPageContent.whyCards(cityName);
-  const introParagraphs = cityPageContent.introSection.paragraphs(cityName);
+  const whyCards = cityPageContent.matchingCards(cityName);
+  const introParagraphs = cityPageContent.introParagraphs(cityName);
 
   const localBusinessSchema = {
     '@context': 'https://schema.org',
@@ -40,7 +40,7 @@ export default function CityPage({ params }: { params: { city: string } }) {
       name: cityName,
       containedInPlace: { '@type': 'AdministrativeArea', name: siteConfig.name.split(' ').pop() },
     },
-    serviceType: cityPageContent.schema.serviceTypes,
+    serviceType: cityPageContent.schemaServiceTypes,
     priceRange: '\u00a3\u00a3',
   };
 
@@ -58,13 +58,13 @@ export default function CityPage({ params }: { params: { city: string } }) {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-6">
               <div>
                 <div className="inline-flex items-center gap-2 bg-brand-500/20 text-brand-300 px-3 py-1 rounded-full text-sm font-medium mb-6 border border-brand-500/30">
-                  <MapPin className="w-4 h-4" /> {cityPageContent.heroBadgePrefix} {cityName}
+                  <MapPin className="w-4 h-4" /> {siteConfig.name.split(" ").slice(0, -1).join(" ") + " in"} {cityName}
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6">
-                  {cityPageContent.heroHeadingPrefix} <span className="text-brand-400">{cityName}</span>
+                  {siteConfig.name.split(" ").slice(0, -1).join(" ") + " in"} <span className="text-brand-400">{cityName}</span>
                 </h1>
                 <p className="text-xl text-gray-300 leading-relaxed">
-                  {cityPageContent.heroDescription(cityName)}
+                  {`Find vetted ${siteConfig.name.split(" ").slice(0, -1).join(" ").toLowerCase()} specialists in ${cityName}. Free surveys, written quotes, no obligation.`}
                 </p>
               </div>
               <div>
@@ -80,7 +80,7 @@ export default function CityPage({ params }: { params: { city: string } }) {
 
               <section className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-4">
-                  {cityPageContent.introSection.heading(cityName)}
+                  {cityPageContent.introHeading(cityName)}
                 </h2>
                 <div className="prose prose-gray max-w-none text-gray-600 space-y-4">
                   {introParagraphs.map((p, i) => (
@@ -146,8 +146,8 @@ export default function CityPage({ params }: { params: { city: string } }) {
             <aside className="lg:col-span-1">
               <div className="sticky top-28 space-y-8">
                 <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                  <h3 className="text-lg font-display font-bold text-gray-900 mb-4">{cityPageContent.sidebar.heading(cityName)}</h3>
-                  <p className="text-gray-600 text-sm mb-6">{cityPageContent.sidebar.description(cityName)}</p>
+                  <h3 className="text-lg font-display font-bold text-gray-900 mb-4">{cityPageContent.sidebarCta(cityName).heading}</h3>
+                  <p className="text-gray-600 text-sm mb-6">{cityPageContent.sidebarCta(cityName).description}</p>
                   <button onClick={() => setIsModalOpen(true)} className="block w-full btn-primary text-center">Find an Installer</button>
                   <div className="mt-6 pt-6 border-t border-gray-100 space-y-4">
                     {[
@@ -163,8 +163,8 @@ export default function CityPage({ params }: { params: { city: string } }) {
                   </div>
                 </div>
                 <div className="bg-brand-900 text-white p-6 rounded-2xl shadow-lg">
-                  <h3 className="text-lg font-display font-bold mb-3">{cityPageContent.sidebar.financeHeading}</h3>
-                  <p className="text-brand-100 text-sm mb-4">{cityPageContent.sidebar.financeDescription(cityName)}</p>
+                  <h3 className="text-lg font-display font-bold mb-3">{cityPageContent.sidebarFinance(cityName).heading}</h3>
+                  <p className="text-brand-100 text-sm mb-4">{cityPageContent.sidebarFinance(cityName).description}</p>
                   <button onClick={() => setIsModalOpen(true)} className="block w-full bg-white text-brand-900 text-center font-bold py-3 px-6 rounded-xl hover:bg-brand-50 transition-colors text-sm">Check Eligibility</button>
                 </div>
               </div>
@@ -172,8 +172,8 @@ export default function CityPage({ params }: { params: { city: string } }) {
           </div>
 
           <div className="bg-brand-900 rounded-2xl p-8 md:p-12 text-center mt-12">
-            <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">{cityPageContent.ctaSection.heading(cityName)}</h2>
-            <p className="text-brand-200 mb-8 max-w-2xl mx-auto">{cityPageContent.ctaSection.description(cityName)}</p>
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">{cityPageContent.bottomCta(cityName).heading}</h2>
+            <p className="text-brand-200 mb-8 max-w-2xl mx-auto">{cityPageContent.bottomCta(cityName).description}</p>
             <button onClick={() => setIsModalOpen(true)} className="bg-white text-brand-900 font-bold text-lg py-4 px-10 rounded-xl hover:bg-brand-50 transition-colors">Get Your Free Quotes</button>
           </div>
         </div>

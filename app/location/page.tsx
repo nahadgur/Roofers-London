@@ -5,6 +5,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { MapPin, Search } from 'lucide-react';
 import { LOCATIONS, toSlug } from '@/data/locations';
+import { siteConfig } from '@/data/site';
 import { FAQS_LOCATION } from '@/data/site';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -32,9 +33,9 @@ export default function LocationIndexPage() {
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main className="flex-grow">
         <Hero
-          title="Installers by London Location"
+          title={`${siteConfig.name} by Location`}
           subtitle="We cover 75 areas across London. Search for your area and see which specialists cover it."
-          image="/images/gates/herts-overhead-iron-gates-gravel-circle-topiary.png"
+          image="/images/hero-main.png"
           onOpenModal={() => setIsModalOpen(true)}
         />
 

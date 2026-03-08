@@ -1,6 +1,7 @@
 'use client';
 
 import { siteConfig } from '@/data/site';
+import { services } from '@/data/services';
 import { useState } from 'react';
 import { CheckCircle } from 'lucide-react';
 
@@ -9,14 +10,7 @@ interface HeroLeadFormProps {
   service?: string;
 }
 
-const GATE_TYPES = [
-  'SERVICE_TYPE_1',
-  'SERVICE_TYPE_2',
-  'SERVICE_TYPE_3',
-  'SERVICE_TYPE_4',
-  'SERVICE_TYPE_5',
-  'SERVICE_TYPE_6',
-];
+
 
 const GOOGLE_SCRIPT_URL =
   'https://script.google.com/macros/s/AKfycbzPwtFtpK_ChLARoqlehndwwD_Gd6EMkiEN-NUvjp70D4753vkmnmLq5Ei9MvC__x6e/exec';
@@ -111,8 +105,8 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
 
         <select required name="treatment" value={formData.treatment} onChange={handleChange} className={inputClass + " appearance-none cursor-pointer"}>
           <option value="" disabled>What type of service? *</option>
-          {GATE_TYPES.map(t => (
-            <option key={t} value={t}>{t}</option>
+          {services.map(s => (
+            <option key={s.id} value={s.title}>{s.title}</option>
           ))}
         </select>
 

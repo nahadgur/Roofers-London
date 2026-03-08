@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { services } from '@/data/services';
+import { siteConfig } from '@/data/site';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
@@ -19,9 +20,9 @@ export default function ServicesIndexPage() {
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main className="flex-grow">
         <Hero
-          title="London Installation Services"
-          subtitle="Six categories of specialist gate work, each handled by installers who do that type of project as their primary trade. Select the service that matches your requirements and get connected with vetted London professionals."
-          image="/images/gates/gate-aluminium-sliding-horizontal-modern-new-build.png"
+          title={`${siteConfig.name} Services`}
+          subtitle="Browse our specialist service categories. Select the service that matches your requirements and get connected with vetted local professionals."
+          image="/images/hero-main.png"
           showCta={false}
           showTrust={false}
         />

@@ -22,7 +22,7 @@ export function PricingSection({ cityName, serviceId, serviceName }: PricingSect
 
   const intro = cityName
     ? `Prices in ${cityName} vary depending on the type, material, and specification. Below are typical costs from vetted installers in the ${cityName} area. All prices are in GBP and include full installation.`
-    : 'Prices vary depending on the type, material, and specification. Below are typical costs from installers in our London network. All prices are in GBP and include installation.';
+    : 'Prices vary depending on the type, material, and specification. Below are typical costs from installers in our local network. All prices are in GBP and include installation.';
 
   return (
     <section className="mb-16">

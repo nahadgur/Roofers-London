@@ -7,7 +7,7 @@ import { siteConfig } from '@/data/site';
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Roofers London | Find Trusted Installers Across London',
+    default: siteConfig.name + ' | Find Trusted Installers',
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -56,7 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     description: siteConfig.description,
     areaServed: {
       '@type': 'AdministrativeArea',
-      name: 'London',
+      name: siteConfig.name.split(' ').pop() || '',
       containedInPlace: { '@type': 'Country', name: 'United Kingdom' },
     },
     contactPoint: {

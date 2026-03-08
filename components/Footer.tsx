@@ -56,7 +56,7 @@ export function Footer() {
             <h4 className="text-white font-semibold mb-4">Service Area</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-gray-400">
-                <MapPin className="w-4 h-4 text-brand-500" /> London, United Kingdom
+                <MapPin className="w-4 h-4 text-brand-500" /> {siteConfig.name}
               </li>
             </ul>
           </div>

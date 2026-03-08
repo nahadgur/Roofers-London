@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, MapPin, ChevronDown } from 'lucide-react';
 import { services } from '@/data/services';
+import { siteConfig } from '@/data/site';
 
 interface HeaderProps {
   onOpenModal?: () => void;
@@ -30,7 +31,7 @@ export function Header({ onOpenModal }: HeaderProps) {
       <div className="bg-brand-900 text-brand-50 py-2 px-4 text-sm hidden md:block">
         <div className="container-width flex justify-between items-center">
           <span className="flex items-center gap-2">
-            <MapPin className="w-4 h-4" /> Roofers Specialists Covering All of London
+            <MapPin className="w-4 h-4" /> {siteConfig.name} Specialists
           </span>
         </div>
       </div>
@@ -42,10 +43,10 @@ export function Header({ onOpenModal }: HeaderProps) {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2.5 group">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt="Roofers London" className="h-10 w-auto" />
+              <img src="/logo.png" alt={siteConfig.name} className="h-10 w-auto" />
               <div className="flex flex-col">
-                <span className="font-display font-bold text-xl leading-none text-gray-900">Roofers</span>
-                <span className="text-xs text-brand-500 font-semibold tracking-widest uppercase">London</span>
+                <span className="font-display font-bold text-xl leading-none text-gray-900">{siteConfig.name.split(" ").slice(0, -1).join(" ")}</span>
+                <span className="text-xs text-brand-500 font-semibold tracking-widest uppercase">{siteConfig.name.split(" ").pop()}</span>
               </div>
             </Link>
 
