@@ -34,7 +34,7 @@ export default function LocationIndexPage() {
       <main className="flex-grow">
         <Hero
           title={`${siteConfig.name} by Location`}
-          subtitle="We cover 75 areas across London. Search for your area and see which specialists cover it."
+          subtitle={`We cover areas across ${siteConfig.name.split(" ").pop()}. Search for your area and see which specialists cover it.`}
           image="/images/hero-main.png"
           onOpenModal={() => setIsModalOpen(true)}
         />
