@@ -117,29 +117,3 @@ export const FAQS_LOCATION = [
 ];
 export const testimonials = TESTIMONIALS;
 export const trustBadges = TRUST_BADGES;
-export const BLOG_SIDEBAR_SERVICE_LINKS = [
-  {
-    "label": "Roof Replacement in Bloomsbury",
-    "href": "/services/roof-replacement/bloomsbury/"
-  },
-  {
-    "label": "Flat Roofing in Covent Garden",
-    "href": "/services/flat-roofing/covent-garden/"
-  },
-  {
-    "label": "Roof Repair in Fitzrovia",
-    "href": "/services/roof-repair/fitzrovia/"
-  },
-  {
-    "label": "Fascias, Soffits and Guttering in Holborn",
-    "href": "/services/fascias-soffits-guttering/holborn/"
-  },
-  {
-    "label": "Chimney Repair in King's Cross",
-    "href": "/services/chimney-repair/king-s-cross/"
-  },
-  {
-    "label": "Roof Cleaning and Coating in Marylebone",
-    "href": "/services/roof-cleaning-coating/marylebone/"
-  }
-];

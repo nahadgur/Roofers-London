@@ -24,8 +24,8 @@ function BlogCtaBanner({ onOpenModal }: { onOpenModal: () => void }) {
         </div>
         <div className="flex-1 text-center md:text-left">
           <p className="text-[10px] font-bold uppercase tracking-widest text-brand-400 mb-1">No Cost, No Obligation</p>
-          <h3 className="text-lg md:text-xl font-bold text-white leading-snug mb-1">Need quotes for your LOCATION_DISPLAY property?</h3>
-          <p className="text-brand-200 text-sm">Submit your details and we connect you with up to three screened LOCATION_DISPLAY installers. Completely free.</p>
+          <h3 className="text-lg md:text-xl font-bold text-white leading-snug mb-1">Need quotes for your property?</h3>
+          <p className="text-brand-200 text-sm">Submit your details and we connect you with up to three screened local specialists. Completely free.</p>
         </div>
         <div className="flex-shrink-0">
           <button
@@ -58,7 +58,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
     }
     if (block.type === 'image' && currentH2Index !== -1) {
       if (!imageQueue[currentH2Index]) imageQueue[currentH2Index] = [];
-      imageQueue[currentH2Index].push({ src: block.src, alt: block.alt });
+      imageQueue[currentH2Index].push({ src: block.src || '', alt: block.alt || '' });
     }
   }
 
@@ -119,7 +119,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
           case 'list':
             elements.push(
               <ul key={i} className="my-6 pl-6 space-y-2">
-                {block.items.map((item, j) => (
+                {(block.items || []).map((item, j) => (
                   <li key={j} className="text-gray-600 leading-relaxed list-disc marker:text-brand-500">
                     {item}
                   </li>
@@ -133,7 +133,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
               <div key={i} className="mt-12 pt-8 border-t border-gray-200 not-prose">
                 <h3 className="text-lg font-display font-bold text-gray-900 mb-6">Related articles</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  {block.articles.map((a) => {
+                  {(block.articles || []).map((a) => {
                     const fullArticle = blogArticles.find(art => art.slug === a.slug);
                     return (
                       <Link
@@ -186,7 +186,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
 
   // Collect external-link blocks from article content for sidebar Further Reading
   const furtherReading = article.content.filter(
-    (b): b is ContentBlock & { href: string; source: string } => b.type === 'external-link' && !!b.href
+    (b): b is Extract<ContentBlock, { type: 'external-link' }> => b.type === 'external-link'
   );
 
   const bottomRelated = blogArticles
@@ -272,7 +272,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
 
                 {/* CTA */}
                 <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                  <h3 className="text-lg font-display font-bold text-gray-900 mb-3">Find vetted LOCATION_DISPLAY specialists</h3>
+                  <h3 className="text-lg font-display font-bold text-gray-900 mb-3">Find vetted local specialists</h3>
                   <p className="text-gray-500 text-sm mb-5">Free site surveys, written quotes from up to 3 matched installers, zero fees.</p>
                   <button onClick={() => setIsModalOpen(true)} className="block w-full btn-primary text-center">
                     Find Installers
