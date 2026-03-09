@@ -306,20 +306,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
                       <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
                       <h3 className="font-bold text-gray-900 text-sm">Further Reading</h3>
                     </div>
-                    <ul className="space-y-2.5">
-                      {furtherReading.map((link, i) => (
-                        <li key={i}>
-                          <a
-                            href={link.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm text-brand-600 hover:text-brand-800 hover:underline underline-offset-2 transition-colors leading-snug block"
-                          >
-                            {link.source}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
+        
                   </div>
                 )}
 
